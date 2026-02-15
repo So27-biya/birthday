@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background: white;
+            width: 350px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        h1 {
+            color: #ff4e50;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #555;
+            font-size: 16px;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            background: #ff4e50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #fc913a;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>🎉 Happy Birthday! 🎂</h1>
+        <p>Wishing you a day filled with love, joy, and all your favorite things!</p>
+        <p>May this year bring new happiness, new goals, and new achievements.</p>
+        <button class="btn" onclick="alert('Have an Amazing Birthday! 🎈')">
+            Click for Surprise
+        </button>
+    </div>
+
+</body>
+</html>
+
